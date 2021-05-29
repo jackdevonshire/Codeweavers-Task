@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Pokemon Directory</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        {{ pagination.info }}
+        {{ pagination.links }}
+        <table class="table">
+          <thead>
+            <tr>
+            <th>Pokemon</th>
+            <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for pokemon in directory %}
+            <tr>
+            <td>{{ pokemon.name }}</td>
+            <td><a href="{{ pokemon.url }}">View Pokemon</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {{ pagination.links }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Pokemon | {{data['name'] }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{ data['sprites']['front_default'] }}" width="250px" height="250px">
+                </div>
+                <div class="col-md-8">
+                    <br>
+                    <h1>{{ data['name'] }}</h1>
+                    <hr>
+                    <p>Species: {{ data['species']['name'] }}</p>
+                    <p>Weight: {{ data['weight'] }}</p>
+                    <p>Base XP: {{ data['base_experience'] }}</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            Abilities
+                            <br>
+                            <ul>
+                                {% for ability in data['abilities'] %}
+                                <li>{{ ability['ability']['name'] }}</li>
+                                {% endfor %}
+                            </ul>
+                            <br>
+                            Moves
+                            <br>
+                            <ul>
+                                {% for move in data['moves'] %}
+                                <li>{{ move['move']['name'] }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            Forms
+                            <br>
+                            <ul>
+                                {% for form in data['forms'] %}
+                                <li>{{ form['name'] }}</li>
+                                {% endfor %}
+                            </ul>
+                            <br>
+                            Held Items
+                            <br>
+                            <ul>
+                                {% for item in data['held_items'] %}
+                                <li>{{ item['item']['name'] }}</li>
+                                {% endfor %}
+                            </ul>
+                            <br>
+                            Types
+                            <br>
+                            <ul>
+                                {% for type in data['types'] %}
+                                <li>{{ type['type']['name'] }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

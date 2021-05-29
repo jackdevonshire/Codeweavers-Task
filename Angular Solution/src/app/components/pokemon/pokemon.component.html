@@ -1,0 +1,64 @@
+<app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{ data['sprites']['front_default'] }}" width="250px" height="250px">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <h1>{{ data['name'] }}</h1>
+            <hr>
+            <p>Species: {{ data['species']['name'] }}</p>
+            <p>Weight: {{ data['weight'] }}</p>
+            <p>Base XP: {{ data['base_experience'] }}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                Abilities
+                <br>
+                <ul  *ngFor="let ability of data['abilities']">
+                  <li>{{ ability['ability']['name'] }}</li>
+                </ul>
+                <br>
+                Moves
+                <br>
+                <ul  *ngFor="let move of data['moves']">
+                  <li>{{ move['move']['name'] }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                Forms
+                <br>
+                <ul  *ngFor="let form of data['forms']">
+                  <li>{{ form['name'] }}</li>
+                </ul>
+                <br>
+                Held Items
+                <br>
+                <ul  *ngFor="let item of data['held_items']">
+                  <li>{{ item['item']['name'] }}</li>
+                </ul>
+                <br>
+                Types
+                <br>
+                <ul  *ngFor="let type of data['types']">
+                  <li>{{ type['type']['name'] }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

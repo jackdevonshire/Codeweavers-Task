@@ -1,0 +1,28 @@
+<app-header></app-header><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <nav>
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="pokemon-directory/{{ this.page - 1 }}">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="pokemon-directory/{{ this.page + 1 }}">Next</a></li>
+          </ul>
+        </nav>
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Pokemon</th>
+            <th>Link</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let pokemon of results">
+            <td>{{ pokemon.name }}</td>
+            <td><a href="{{ (pokemon.url).replace('https://pokeapi.co/api/v2/', '') }}">View Pokemon</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
