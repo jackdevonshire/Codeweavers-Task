@@ -20,10 +20,29 @@ namespace KanbanConsoleApp.Features.Tasks
                 tasksToReturn.Add(new Task
                 {
                     Id = task.Id,
-                    Description = task.Description
+                    Description = task.Description,
+                    ClientName = task.ClientName
                 });
             }
 
+            return tasksToReturn;
+        }
+        public List<Task> GetTasksForClientName(string name)
+        {
+            var tasksToReturn = new List<Task>();
+
+            foreach (var task in _tasks)
+            {
+                if (task.ClientName == name)
+                {
+                    tasksToReturn.Add(new Task
+                    {
+                        Id = task.Id,
+                        Description = task.Description,
+                        ClientName = task.ClientName
+                    });
+                }
+            }
             return tasksToReturn;
         }
     }

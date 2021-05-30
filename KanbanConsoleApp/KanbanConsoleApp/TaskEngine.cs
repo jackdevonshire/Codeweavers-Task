@@ -45,7 +45,7 @@ namespace KanbanConsoleApp
 
         public List<Task> GetTasksForClient(string clientName)
         {
-            return new List<Task>();
+            return _taskRepository.GetTasksForClientName(clientName);
         }
     }
 }
