@@ -1,6 +1,7 @@
 <app-header></app-header>
   <div class="container">
     <div class="row">
+
       <div class="col-sm">
         <div class="row">
           <div class="col-md-4">
@@ -15,7 +16,27 @@
             <p>Base XP: {{ data['base_experience'] }}</p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                Base Stats<br><br>
 
+                <ul  *ngFor="let stat of data['stats']">
+                  <li>
+                    {{ stat['stat']['name'] }}
+
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: {{ stat['base_stat'] }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ stat['base_stat'] }}%</div>
+                    </div>
+                  </li>
+                </ul>
+
+                </div>
+              </div>
+          </div>
+        </div>
+        <br>
         <div class="row">
           <div class="col-md-6">
             <div class="card">
