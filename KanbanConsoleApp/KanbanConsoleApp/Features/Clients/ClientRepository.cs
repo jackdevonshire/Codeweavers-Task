@@ -11,6 +11,18 @@ namespace KanbanConsoleApp.Features.Clients
             _clients.Add(client);
         }
 
+        public void DeleteClientByName(string name)
+        {
+            foreach (var client in _clients)
+            {
+                if (client.Name == name)
+                {
+                    _clients.Remove(client);
+                    break;
+                }
+            }
+        }
+
         public List<Client> GetClients()
         {
             var clientsToReturn = new List<Client>();

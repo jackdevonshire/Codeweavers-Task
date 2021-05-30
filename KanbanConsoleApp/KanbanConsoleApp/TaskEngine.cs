@@ -40,6 +40,7 @@ namespace KanbanConsoleApp
 
         public void RemoveClientByName(string name)
         {
+            _clientRepository.DeleteClientByName(name);
         }
 
         public List<Task> GetTasksForClient(string clientName)
