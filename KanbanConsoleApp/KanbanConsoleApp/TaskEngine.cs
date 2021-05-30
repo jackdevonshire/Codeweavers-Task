@@ -41,6 +41,11 @@ namespace KanbanConsoleApp
             return null;
         }
 
+        public void SwapTasks(string taskOne, string taskTwo)
+        {
+            _taskRepository.SwapTasks(taskOne, taskTwo);
+        }
+
         public void SaveClient(Client client)
         {
             _clientRepository.SaveClient(client);

@@ -20,7 +20,10 @@ namespace KanbanConsoleApp.Tests
             // TODO - Extend the engine here to re-order tasks. Look at the test assertions to see the expected ordering.
 
             // TODO - Swap 3 and 4
+            engine.SwapTasks("3", "4");
+
             // TODO - Swap 2 and 6
+            engine.SwapTasks("2", "6");
 
             var tasks = engine.GetTasksForClient("Audi");
             Assert.AreEqual(tasks[0].Id, "1");

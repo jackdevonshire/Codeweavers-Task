@@ -27,6 +27,30 @@ namespace KanbanConsoleApp.Features.Tasks
 
             return tasksToReturn;
         }
+
+        public void SwapTasks(string taskOneID, string taskTwoID)
+        {
+            int indexOne = -1;
+            int indexTwo = -1;
+
+            for (var i = 1; i < _tasks.Count; ++i)
+            {
+                if (_tasks[i].Id == taskOneID)
+                {
+                    indexOne = i;
+                }
+                if (_tasks[i].Id == taskTwoID)
+                {
+                    indexTwo = i;
+                }
+            }
+
+
+            Task temp = _tasks[indexOne];
+            _tasks[indexOne] = _tasks[indexTwo];
+            _tasks[indexTwo] = temp;
+        }
+
         public List<Task> GetTasksForClientName(string name)
         {
             var tasksToReturn = new List<Task>();
