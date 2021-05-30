@@ -22,6 +22,7 @@ namespace KanbanConsoleApp.Features.Clients
                     Name = client.Name
                 });
             }
+            clientsToReturn.Sort((x, y) => x.Name.CompareTo(y.Name));
 
             return clientsToReturn;
         }
