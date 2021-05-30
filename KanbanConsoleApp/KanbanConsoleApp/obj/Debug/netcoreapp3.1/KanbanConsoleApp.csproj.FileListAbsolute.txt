@@ -11,3 +11,16 @@ C:\Users\Jack\Desktop\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\
 C:\Users\Jack\Desktop\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.dll
 C:\Users\Jack\Desktop\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.pdb
 C:\Users\Jack\Desktop\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.genruntimeconfig.cache
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\bin\Debug\netcoreapp3.1\KanbanConsoleApp.exe
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\bin\Debug\netcoreapp3.1\KanbanConsoleApp.deps.json
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\bin\Debug\netcoreapp3.1\KanbanConsoleApp.runtimeconfig.json
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\bin\Debug\netcoreapp3.1\KanbanConsoleApp.runtimeconfig.dev.json
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\bin\Debug\netcoreapp3.1\KanbanConsoleApp.dll
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\bin\Debug\netcoreapp3.1\KanbanConsoleApp.pdb
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.csprojAssemblyReference.cache
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.AssemblyInfoInputs.cache
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.AssemblyInfo.cs
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.csproj.CoreCompileInputs.cache
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.dll
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.pdb
+D:\Github\Codeweavers-Task\KanbanConsoleApp\KanbanConsoleApp\obj\Debug\netcoreapp3.1\KanbanConsoleApp.genruntimeconfig.cache

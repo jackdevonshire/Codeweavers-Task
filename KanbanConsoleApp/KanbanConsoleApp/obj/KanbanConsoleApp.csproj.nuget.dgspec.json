@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jack\\Desktop\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj": {}
+    "D:\\Github\\Codeweavers-Task\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jack\\Desktop\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj": {
+    "D:\\Github\\Codeweavers-Task\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jack\\Desktop\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj",
+        "projectUniqueName": "D:\\Github\\Codeweavers-Task\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj",
         "projectName": "KanbanConsoleApp",
-        "projectPath": "C:\\Users\\Jack\\Desktop\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj",
+        "projectPath": "D:\\Github\\Codeweavers-Task\\KanbanConsoleApp\\KanbanConsoleApp\\KanbanConsoleApp.csproj",
         "packagesPath": "C:\\Users\\Jack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jack\\Desktop\\KanbanConsoleApp\\KanbanConsoleApp\\obj\\",
+        "outputPath": "D:\\Github\\Codeweavers-Task\\KanbanConsoleApp\\KanbanConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jack\\AppData\\Roaming\\NuGet\\NuGet.Config",

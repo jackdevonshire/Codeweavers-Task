@@ -7,7 +7,7 @@ namespace KanbanConsoleApp
     public class TaskEngine
     {
         private readonly TaskRepository _taskRepository = new TaskRepository();
-
+        private readonly ClientRepository _clientRepository = new ClientRepository();
 
         public void SaveTask(Task task)
         {
@@ -19,7 +19,9 @@ namespace KanbanConsoleApp
             var allTasks = _taskRepository.GetTasks();
             foreach (var task in allTasks)
             {
-                return task;
+                if (task.Id == id) {
+                    return task;
+                }
             }
 
             return null;
@@ -27,11 +29,13 @@ namespace KanbanConsoleApp
 
         public void SaveClient(Client client)
         {
+            _clientRepository.SaveClient(client);
         }
 
         public List<Client> GetClients()
         {
-            return new List<Client>();
+            var allClients = _clientRepository.GetClients();
+            return allClients;
         }
 
         public void RemoveClientByName(string name)
