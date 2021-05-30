@@ -10,9 +10,9 @@ import { DirectoryComponent } from './components/directory/directory.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 
 const routes: Routes = [
-  { path: 'pokemon-directory/:page', component: DirectoryComponent },
+  { path: 'pokemon-directory', component: DirectoryComponent },
   { path: 'pokemon/:id', component: PokemonComponent },
-  {path: '**', redirectTo: '/pokemon-directory/1'}
+  {path: '**', redirectTo: '/pokemon-directory'}
 ];
 
 @NgModule({
