@@ -11,7 +11,21 @@ namespace KanbanConsoleApp
 
         public void SaveTask(Task task)
         {
-            _taskRepository.SaveTask(task);
+            var found = false;
+            foreach (var client in _clientRepository.GetClients())
+            {
+                if (client.Name == task.ClientName)
+                {
+                    found = true;
+                }
+            }
+            if (!found)
+            {
+                throw new System.Exception("The supplied Client could not be found.");
+            } else
+            {
+                _taskRepository.SaveTask(task);
+            }
         }
 
         public Task RetrieveTaskById(string id)
