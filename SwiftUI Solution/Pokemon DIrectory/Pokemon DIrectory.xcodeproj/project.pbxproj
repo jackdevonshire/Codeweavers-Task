@@ -11,8 +11,8 @@
 		47E25A672663B65100505918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E25A662663B65100505918 /* ContentView.swift */; };
 		47E25A692663B65200505918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E25A682663B65200505918 /* Assets.xcassets */; };
 		47E25A6C2663B65200505918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E25A6B2663B65200505918 /* Preview Assets.xcassets */; };
-		47E25A792663B6D200505918 /* DirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E25A782663B6D200505918 /* DirectoryView.swift */; };
 		47E25A7D2663B6FF00505918 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E25A7C2663B6FF00505918 /* LogoView.swift */; };
+		47EB6B492663BBC1004EE81D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB6B482663BBC1004EE81D /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		47E25A682663B65200505918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E25A6B2663B65200505918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47E25A6D2663B65200505918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47E25A782663B6D200505918 /* DirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryView.swift; sourceTree = "<group>"; };
 		47E25A7C2663B6FF00505918 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		47EB6B482663BBC1004EE81D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				47E25A7B2663B6EF00505918 /* Subviews */,
-				47E25A782663B6D200505918 /* DirectoryView.swift */,
+				47EB6B482663BBC1004EE81D /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E25A792663B6D200505918 /* DirectoryView.swift in Sources */,
+				47EB6B492663BBC1004EE81D /* SearchView.swift in Sources */,
 				47E25A7D2663B6FF00505918 /* LogoView.swift in Sources */,
 				47E25A672663B65100505918 /* ContentView.swift in Sources */,
 				47E25A652663B65100505918 /* Pokemon_DIrectoryApp.swift in Sources */,

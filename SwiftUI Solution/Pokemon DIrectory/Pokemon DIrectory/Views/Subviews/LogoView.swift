@@ -9,7 +9,15 @@ import SwiftUI
 
 struct LogoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Image("Pokeball")
+                    .resizable()
+                    .frame(width: 100, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Text("Pokemon Directory")
+                    .font(.system(size: 30, weight: .medium, design: .default))
+            }
+        }
     }
 }
 
